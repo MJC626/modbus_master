@@ -1,0 +1,3 @@
+/Users/mjc626/STM32/modbus_master/cmake-build-debug/CMakeFiles/test.elf.dir
+/Users/mjc626/STM32/modbus_master/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/mjc626/STM32/modbus_master/cmake-build-debug/CMakeFiles/rebuild_cache.dir

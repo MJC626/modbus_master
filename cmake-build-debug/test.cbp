@@ -1,0 +1,986 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="test"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/mjc626/STM32/modbus_master/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/mjc626/STM32/modbus_master/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/mjc626/STM32/modbus_master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/mjc626/STM32/modbus_master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/mjc626/STM32/modbus_master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test.elf">
+				<Option output="/Users/mjc626/STM32/modbus_master/cmake-build-debug/test.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/mjc626/STM32/modbus_master/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DTX_INCLUDE_USER_DEFINE_FILE"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32F411xE"/>
+					<Add directory="/Users/mjc626/STM32/modbus_master/modbus"/>
+					<Add directory="/Users/mjc626/STM32/modbus_master/Core/Inc"/>
+					<Add directory="/Users/mjc626/STM32/modbus_master/AZURE_RTOS/App"/>
+					<Add directory="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="/Users/mjc626/STM32/modbus_master/Drivers/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="/Users/mjc626/STM32/modbus_master/Drivers/CMSIS/Include"/>
+					<Add directory="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/inc"/>
+					<Add directory="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/ports/cortex_m4/gnu/inc"/>
+					<Add directory="/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/include/c++/13.3.1"/>
+					<Add directory="/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/include/c++/13.3.1/arm-none-eabi"/>
+					<Add directory="/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/include/c++/13.3.1/backward"/>
+					<Add directory="/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/include"/>
+					<Add directory="/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/include-fixed"/>
+					<Add directory="/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/mjc626/STM32/modbus_master/cmake-build-debug/Makefile&quot;  VERBOSE=1 test.elf"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/mjc626/STM32/modbus_master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/mjc626/STM32/modbus_master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/mjc626/STM32/modbus_master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test.elf/fast">
+				<Option output="/Users/mjc626/STM32/modbus_master/cmake-build-debug/test.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/mjc626/STM32/modbus_master/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DTX_INCLUDE_USER_DEFINE_FILE"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32F411xE"/>
+					<Add directory="/Users/mjc626/STM32/modbus_master/modbus"/>
+					<Add directory="/Users/mjc626/STM32/modbus_master/Core/Inc"/>
+					<Add directory="/Users/mjc626/STM32/modbus_master/AZURE_RTOS/App"/>
+					<Add directory="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="/Users/mjc626/STM32/modbus_master/Drivers/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="/Users/mjc626/STM32/modbus_master/Drivers/CMSIS/Include"/>
+					<Add directory="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/inc"/>
+					<Add directory="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/ports/cortex_m4/gnu/inc"/>
+					<Add directory="/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/include/c++/13.3.1"/>
+					<Add directory="/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/include/c++/13.3.1/arm-none-eabi"/>
+					<Add directory="/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/include/c++/13.3.1/backward"/>
+					<Add directory="/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/include"/>
+					<Add directory="/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/include-fixed"/>
+					<Add directory="/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/mjc626/STM32/modbus_master/cmake-build-debug/Makefile&quot;  VERBOSE=1 test.elf/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/mjc626/STM32/modbus_master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/mjc626/STM32/modbus_master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/mjc626/STM32/modbus_master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/mjc626/STM32/modbus_master/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/mjc626/STM32/modbus_master/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/mjc626/STM32/modbus_master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/mjc626/STM32/modbus_master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/mjc626/STM32/modbus_master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/mjc626/STM32/modbus_master/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/mjc626/STM32/modbus_master/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/mjc626/STM32/modbus_master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/mjc626/STM32/modbus_master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/mjc626/STM32/modbus_master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/AZURE_RTOS/.DS_Store">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/AZURE_RTOS/App/.DS_Store">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/AZURE_RTOS/App/app_azure_rtos.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/AZURE_RTOS/App/app_azure_rtos.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/AZURE_RTOS/App/app_azure_rtos_config.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Core/.DS_Store">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Core/Inc/RTE_Components.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Core/Inc/app_threadx.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Core/Inc/dma.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Core/Inc/gpio.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Core/Inc/main.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Core/Inc/stm32f4xx_hal_conf.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Core/Inc/stm32f4xx_it.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Core/Inc/tx_user.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Core/Inc/usart.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Core/Src/app_threadx.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Core/Src/dma.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Core/Src/gpio.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Core/Src/main.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Core/Src/stm32f4xx_hal_msp.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Core/Src/stm32f4xx_hal_timebase_tim.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Core/Src/stm32f4xx_it.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Core/Src/system_stm32f4xx.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Core/Src/tx_initialize_low_level.s">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Core/Src/usart.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Core/Startup/startup_stm32f411ceux.s">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/CMSIS/Device/ST/STM32F4xx/LICENSE.md">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/CMSIS/Device/ST/STM32F4xx/LICENSE.txt">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/CMSIS/Include/cachel1_armv7.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/CMSIS/Include/cmsis_armcc.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/CMSIS/Include/cmsis_armclang.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/CMSIS/Include/cmsis_armclang_ltm.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/CMSIS/Include/cmsis_compiler.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/CMSIS/Include/cmsis_gcc.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/CMSIS/Include/cmsis_iccarm.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/CMSIS/Include/cmsis_version.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/CMSIS/Include/core_armv81mml.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/CMSIS/Include/core_armv8mbl.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/CMSIS/Include/core_armv8mml.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/CMSIS/Include/core_cm0.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/CMSIS/Include/core_cm0plus.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/CMSIS/Include/core_cm1.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/CMSIS/Include/core_cm23.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/CMSIS/Include/core_cm3.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/CMSIS/Include/core_cm33.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/CMSIS/Include/core_cm35p.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/CMSIS/Include/core_cm4.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/CMSIS/Include/core_cm55.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/CMSIS/Include/core_cm7.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/CMSIS/Include/core_cm85.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/CMSIS/Include/core_sc000.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/CMSIS/Include/core_sc300.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/CMSIS/Include/core_starmc1.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/CMSIS/Include/mpu_armv7.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/CMSIS/Include/mpu_armv8.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/CMSIS/Include/pac_armv81.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/CMSIS/Include/pmu_armv8.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/CMSIS/Include/tz_context.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/CMSIS/LICENSE.txt">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_bus.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_cortex.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_exti.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_pwr.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_system.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_utils.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/LICENSE.md">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/LICENSE.txt">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/LICENSE.txt">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/LICENSED-HARDWARE.txt">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/inc/tx_api.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/inc/tx_block_pool.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/inc/tx_byte_pool.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/inc/tx_event_flags.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/inc/tx_initialize.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/inc/tx_mutex.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/inc/tx_queue.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/inc/tx_semaphore.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/inc/tx_thread.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/inc/tx_timer.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/inc/tx_trace.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/inc/tx_user_sample.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_block_allocate.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_block_pool_cleanup.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_block_pool_create.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_block_pool_delete.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_block_pool_info_get.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_block_pool_initialize.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_block_pool_prioritize.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_block_release.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_byte_allocate.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_byte_pool_cleanup.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_byte_pool_create.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_byte_pool_delete.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_byte_pool_info_get.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_byte_pool_initialize.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_byte_pool_prioritize.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_byte_pool_search.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_byte_release.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_event_flags_cleanup.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_event_flags_create.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_event_flags_delete.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_event_flags_get.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_event_flags_info_get.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_event_flags_initialize.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_event_flags_set.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_event_flags_set_notify.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_initialize_high_level.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_initialize_kernel_enter.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_initialize_kernel_setup.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_mutex_cleanup.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_mutex_create.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_mutex_delete.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_mutex_get.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_mutex_info_get.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_mutex_initialize.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_mutex_prioritize.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_mutex_priority_change.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_mutex_put.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_queue_cleanup.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_queue_create.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_queue_delete.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_queue_flush.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_queue_front_send.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_queue_info_get.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_queue_initialize.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_queue_prioritize.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_queue_receive.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_queue_send.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_queue_send_notify.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_semaphore_ceiling_put.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_semaphore_cleanup.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_semaphore_create.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_semaphore_delete.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_semaphore_get.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_semaphore_info_get.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_semaphore_initialize.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_semaphore_prioritize.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_semaphore_put.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_semaphore_put_notify.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_thread_create.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_thread_delete.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_thread_entry_exit_notify.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_thread_identify.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_thread_info_get.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_thread_initialize.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_thread_preemption_change.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_thread_priority_change.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_thread_relinquish.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_thread_reset.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_thread_resume.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_thread_shell_entry.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_thread_sleep.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_thread_stack_analyze.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_thread_stack_error_handler.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_thread_stack_error_notify.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_thread_suspend.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_thread_system_preempt_check.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_thread_system_resume.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_thread_system_suspend.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_thread_terminate.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_thread_time_slice.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_thread_time_slice_change.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_thread_timeout.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_thread_wait_abort.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_time_get.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_time_set.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_timer_activate.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_timer_change.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_timer_create.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_timer_deactivate.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_timer_delete.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_timer_expiration_process.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_timer_info_get.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_timer_initialize.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_timer_system_activate.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_timer_system_deactivate.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/tx_timer_thread_entry.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_block_allocate.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_block_pool_create.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_block_pool_delete.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_block_pool_info_get.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_block_pool_prioritize.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_block_release.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_byte_allocate.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_byte_pool_create.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_byte_pool_delete.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_byte_pool_info_get.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_byte_pool_prioritize.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_byte_release.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_event_flags_create.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_event_flags_delete.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_event_flags_get.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_event_flags_info_get.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_event_flags_set.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_event_flags_set_notify.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_mutex_create.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_mutex_delete.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_mutex_get.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_mutex_info_get.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_mutex_prioritize.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_mutex_put.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_queue_create.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_queue_delete.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_queue_flush.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_queue_front_send.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_queue_info_get.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_queue_prioritize.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_queue_receive.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_queue_send.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_queue_send_notify.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_semaphore_ceiling_put.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_semaphore_create.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_semaphore_delete.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_semaphore_get.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_semaphore_info_get.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_semaphore_prioritize.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_semaphore_put.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_semaphore_put_notify.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_thread_create.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_thread_delete.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_thread_entry_exit_notify.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_thread_info_get.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_thread_preemption_change.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_thread_priority_change.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_thread_relinquish.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_thread_reset.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_thread_resume.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_thread_suspend.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_thread_terminate.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_thread_time_slice_change.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_thread_wait_abort.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_timer_activate.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_timer_change.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_timer_create.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_timer_deactivate.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_timer_delete.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/common/src/txe_timer_info_get.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/ports/cortex_m4/gnu/inc/tx_port.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/ports/cortex_m4/gnu/src/tx_thread_context_restore.S">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/ports/cortex_m4/gnu/src/tx_thread_context_save.S">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/ports/cortex_m4/gnu/src/tx_thread_interrupt_control.S">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/ports/cortex_m4/gnu/src/tx_thread_schedule.S">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/ports/cortex_m4/gnu/src/tx_thread_stack_build.S">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/ports/cortex_m4/gnu/src/tx_thread_system_return.S">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/Middlewares/ST/threadx/ports/cortex_m4/gnu/src/tx_timer_interrupt.S">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/STM32F411CEUX_FLASH.ld">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/modbus/modbus_config.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/modbus/modbus_master.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/modbus/modbus_master.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="/Users/mjc626/STM32/modbus_master/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
